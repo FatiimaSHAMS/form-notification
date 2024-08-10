@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <script src="submit.js" defer></script>
+    <style>
+        body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+    </style> 
+</head>
+<body>
+    <div class="header">
+        <h1>Form Notification</h1>
+      </div>
+    
+      <h2>Please fill out the form. All fields are required.</h2>
+      <p> You can hover over the <b>?</b> in the form below to activate a tool tip, and use the "Show Password/Hide Password" button to toggle between showing or not showing the text in the password field</p>
+<div class="container">
+
+    <form id="form" action="result.html" method="post">
+        <label for="fname">Firstname:</label>
+        <input type="text" id="fname" name="fname"><br>
+        <label for="lname">Lastname:</label>
+        <input type="text" id="lname" name="lname"><br>
+        <label for="stuid">Student ID:</label>
+        <input type="text" id="stuid" name="stuid"><br>
+        <button class="info" id="info"><b>?</b></button>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password"><br>
+        <button class="show" id="show"></button>
+        <label for="courses">Courses:</label>
+        <select id="courses" name="courses">
+            <option value="defult">Choose your course:</option>
+            <option value="MDIA3211">MDIA 3211</option>
+            <option value="Comp2132">COMP 2132</option>
+            <option value="Comp3013">COMP 3013</option>
+            <option value="Comp2909">COMP 2909</option>
+        </select>
+        <input type="submit" value="Submit" id="submit">
+    </form>
+</div>
+<p></p>
+
+    <div id="pop-up">
+        <p>? BCIT Student IDs must match the pattern: A0nnnnnnn where 'n' ia any number.</p>
+    </div>
+
+    <div id="submition"></div>
+    
+    <div class="footer">
+        <p>Resize the browser window to see how the content respond to the resizing.</p>
+        
+      </div>
+</body>
+</html>
